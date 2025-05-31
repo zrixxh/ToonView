@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cartoon Movie Reviews (2000–2025)</title>
+  <title>ToonView</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <style>
     body {
@@ -20,6 +20,10 @@
       text-align: center;
       margin-bottom: 40px;
     }
+    header img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
     header h1 {
       font-size: 2.5em;
       color: #ffcb05;
@@ -32,12 +36,30 @@
       width: 90%;
       max-width: 800px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .review-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(255, 203, 5, 0.6);
+    }
+    .review-card img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
     }
     .review-card h2 {
       color: #61dafb;
     }
     .review-card p {
       line-height: 1.6;
+    }
+    .stars {
+      color: gold;
+      font-size: 1.5em;
+      margin-top: 5px;
+      text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
     }
     footer {
       margin-top: 40px;
@@ -48,38 +70,48 @@
 </head>
 <body>
   <header>
-    <h1>Cartoon Movie Reviews (2000–2025)</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Clapperboard.svg/512px-Clapperboard.svg.png" alt="ToonView Logo">
+    <h1>ToonView</h1>
     <p>Explore nostalgic and new cartoon classics reviewed with fun and detail!</p>
   </header>
 
   <section class="review-card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/e/ec/The_Incredibles.jpg" alt="The Incredibles Poster">
     <h2>The Incredibles (2004)</h2>
     <p>A stylish, witty take on the superhero genre with strong characters and clever storytelling. Pixar at its best.</p>
+    <div class="stars">★★★★★</div>
   </section>
 
   <section class="review-card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Shrek_2_poster.jpg" alt="Shrek 2 Poster">
     <h2>Shrek 2 (2004)</h2>
     <p>One of the best sequels in animation history — hilarious, heartfelt, and full of fairytale flair.</p>
+    <div class="stars">★★★★☆</div>
   </section>
 
   <section class="review-card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f3/Spider-Man_Into_the_Spider-Verse_poster.png" alt="Into the Spider-Verse Poster">
     <h2>Spider-Man: Into the Spider-Verse (2018)</h2>
     <p>Visually stunning with groundbreaking animation and a multiverse story that clicks for all ages.</p>
+    <div class="stars">★★★★★</div>
   </section>
 
   <section class="review-card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Encanto_Poster.jpg" alt="Encanto Poster">
     <h2>Encanto (2021)</h2>
     <p>Colorful and emotional with unforgettable music and a beautiful Colombian-inspired setting.</p>
+    <div class="stars">★★★★☆</div>
   </section>
 
   <section class="review-card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Nimona_film_poster.jpg" alt="Nimona Poster">
     <h2>Nimona (2023)</h2>
     <p>A genre-bending animated hit with a bold aesthetic and rebellious heart. Unique and powerful storytelling.</p>
+    <div class="stars">★★★★☆</div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Cartoon Movie Reviews | Built with ❤️ for animation fans</p>
+    <p>&copy; 2025 ToonView | Built with ❤️ for animation fans</p>
   </footer>
 </body>
 </html>
-
